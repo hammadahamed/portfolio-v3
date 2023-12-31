@@ -1,0 +1,23 @@
+.wrapper {
+
+    .author-img-w {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        translate: -30px 0;
+
+        .author-img {
+            position: absolute;
+            padding: 10px;
+            border-radius: 2px;
+            border: 1px solid var(--text-color);
+            translate: 10px 10px;
+        }
+    }
+
+    main {
+        height: 100vh;
+    }
+
+
+}

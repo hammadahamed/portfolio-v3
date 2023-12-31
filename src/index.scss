@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Mullish';
+    // src: url('./assets/Mulish/Mulish-VariableFont_wght.ttf');
+    // src: url('./assets/SFMono/SFMono-Regular.ttf');
+    src: url('./assets/Calibre/Calibre-Regular.woff') format('woff');
+    // src: url('./assets/Inter/Inter-VariableFont_slnt\,wght.ttf');
+    // src: url('./assets/Inter_Tight/InterTight-VariableFont_wght.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mullish';
+}
+
+:root {
+    --app-bg: #0e1729;
+    --app-primary: #64ffda;
+    // --app-primary: rgb(94, 234, 201);
+    --app-accent: rgba(45, 212, 128, 0.1);
+    --text-color: #d9d9f89f;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--app-bg);
+}
+
+p {
+    color: var(--text-color);
+    font-weight: 300;
+    font-size: 1.05rem;
+}
+
+.section-header {
+    margin-top: 10px;
+    border-left: 2px solid var(--app-primary);
+    padding-left: 10px;
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.app-card {
+    display: flex;
+
+    .left {
+        flex: 1
+    }
+
+    .right {
+        flex: 4;
+    }
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    color: var(--app-primary);
+    background-color: rgb(15, 15, 15);
+    background-color: var(--app-accent);
+    backdrop-filter: blur(10px);
+    padding: 0 14px;
+    padding-top: 4.5px;
+    border-radius: 20px;
+    font-size: .9rem;
+    white-space: nowrap;
+}
+
+p {
+    .app-highlight {
+        color: rgb(255, 255, 255) !important;
+        opacity: .9 !important;
+    }
+
+}
+
+/* ---------------------------- CUSTOM SCROLL-BAR --------------------------- */
+
+*::-webkit-scrollbar {
+    /* @apply w-1.5 h-1; */
+    width: 0px;
+}
+
+*::-webkit-scrollbar-track {
+    /* @apply rounded-full bg-gray-100; */
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 0px;
+}
+
+*::-webkit-scrollbar-thumb {
+    /* @apply w-1.5 h-1 bg-gray-400 bg-opacity-60 rounded-full; */
+    width: 2px;
+    border-radius: 2px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-track-piece {
+    background: transparent;
+    width: 10px;
+}
+
+html {
+    scrollbar-color: #abadb1;
+    scrollbar-width: 2px;
+}
