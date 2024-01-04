@@ -5,6 +5,20 @@ import IdeaSvg from '@assets/svg/idea.svg';
 
 const recentWorks = [
     {
+        title: "ChatGPT Pro - Chrome extension",
+        description: "Chrome extension for ChatGPT with Advanced features like, Speech to Text, DOM Picking, Saved Prompt, Prefix & Suffix prompts",
+        techStack: [
+            "React",
+            "Zustand",
+            "Typescript",
+            "Reaflow",
+            "OpenAi",
+            "GPT-3.5 model",
+        ],
+        hostedURL: "https://chromewebstore.google.com/detail/chatgpt-pro/beemdfkfplebccejjcmjfngjjnmhnkae",
+        resource: "chatgpt-pro.png"
+    },
+    {
         title: "JSON Visualizer",
         description: "A web app to visulaize JSON data in a node base structural flow representation made with React. Built this to get accustomed to React library. Inspire from jsoncrack.com",
         techStack: [

@@ -1,13 +1,22 @@
 import { createRouter, createWebHistory } from "vue-router";
 import Home from "./modules/home/Home.vue";
+import ChatGPTPrivacyPolicy from "./modules/products/chatgpt-pro/PrivacyPolicy.vue";
 
 const routes = [
   {
-    path: "/",
+    path: "",
     name: "Home",
     component: Home,
     meta: {
-      title: "ai4infinity",
+      title: "Portfolio",
+    },
+  },
+  {
+    path: "/chatgpt-pro/privacy-policy",
+    name: "Chat GPT Privacy Policy",
+    component: ChatGPTPrivacyPolicy,
+    meta: {
+      title: "Portfolio",
     },
   },
 ];
